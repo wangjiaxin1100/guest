@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.contrib import auth
 # Create your views here.
 def index(request):
-    print ("get方法调用返回index页面")
+    # print ("get方法调用返回index页面")
     return render(request,"index.html")
     # return HttpResponse("HELLO DJANGO!")
 # 登录操作
